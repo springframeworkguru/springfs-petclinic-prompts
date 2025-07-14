@@ -162,8 +162,8 @@ classDiagram
     
     
     %% JPA relationships
-    Owner ||--o{ Pet : "owns"
-    Pet }o--|| PetType : "has type"
-    Pet ||--o{ Visit : "has visits"
-    Vet }o--o{ Specialty : "has specialties"
+    Owner "1" o--> "0..*" Pet : owns
+    Pet "0..*" --> "1" PetType : "has type"
+    Pet "1" o--> "0..*" Visit : "has visits"
+    Vet "0..*" <--> "0..*" Specialty : "has specialties"
 ```
