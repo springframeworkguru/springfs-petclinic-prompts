@@ -160,6 +160,7 @@ classDiagram
     Person <|-- Owner
     Person <|-- Vet
     
+    
     %% JPA relationships
     Owner ||--o{ Pet : "owns"
     Pet }o--|| PetType : "has type"
