@@ -26,7 +26,7 @@ erDiagram
         INTEGER owner_id FK
     }
     
-    types {
+    types { 
         INTEGER id PK
         VARCHAR name
     }
@@ -161,8 +161,8 @@ classDiagram
     Person <|-- Vet
     
     %% JPA relationships
-    Owner ||--o{ Pet : "owns (OneToMany)"
-    Pet }o--|| PetType : "has type (ManyToOne)"
-    Pet ||--o{ Visit : "has visits (OneToMany)"
-    Vet }o--o{ Specialty : "has specialties (ManyToMany)"
+    Owner ||--o{ Pet : "owns"
+    Pet }o--|| PetType : "has type"
+    Pet ||--o{ Visit : "has visits"
+    Vet }o--o{ Specialty : "has specialties"
 ```
