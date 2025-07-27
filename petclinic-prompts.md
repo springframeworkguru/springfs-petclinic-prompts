@@ -13,7 +13,7 @@ This document contains a collection of prompts to create a Spring Pet Clinic Pro
 * `@GeneratedValue(strategy = GenerationType.IDENTITY)` configures auto-increment primary keys.
 
 ## Implementation Instructions:
-In the package `org.springframework.samples.petclinic.model` create a new class called `BaseEntity`. Annotate the class 
+In the package `guru.springframework.springfspetclinic.model` create a new class called `BaseEntity`. Annotate the class 
 using `@MappedSuperclass`. Provide an Integer property called `id` with protected scope. Annotate the id property with the 
 annotations `@Id` and `@GeneratedValue(strategy = GenerationType.IDENTITY)`. Provide a setter for the id property. Add a 
 utility method `isNew()` that returns `true` if the id is null, annotated with `@JsonIgnore`.
